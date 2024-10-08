@@ -1,8 +1,8 @@
 /* ------------------------------------------------------------------------- */
 /* Sections */
 /* ------------------------------------------------------------------------- */
+background-color: black;
 .section-container {
-    background-color: black;
     border: 8px solid;
     border-radius: 8px;
     box-sizing: border-box;
