@@ -1,7 +1,9 @@
 /* ------------------------------------------------------------------------- */
 /* Sections */
 /* ------------------------------------------------------------------------- */
-background-color: black;
+Cor_de_Fundo {
+    background-color: black;
+}
 .section-container {
     border: 8px solid;
     border-radius: 8px;
