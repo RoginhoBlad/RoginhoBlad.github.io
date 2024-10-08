@@ -20,7 +20,7 @@
     padding-bottom: 0;
     border-radius: 8px;
     margin-top: 0;
-    background-color: white;
+    background-color: gray;
     border-color: inherit;
     font-size: inherit;
 }
@@ -33,7 +33,7 @@
     font-variant: small-caps;
     font-weight: bold;
     background-color: inherit;
-    color: white;
+    color: gray;
     font-size: 16pt;
 }
 
