@@ -134,11 +134,11 @@
 /* Colors */
 /* ------------------------------------------------------------------------- */
 #section-ability, #section-ability .item-icon {
-    background-color: #087c82;
-    border-color: #087c82;
+    background-color: #063980;
+    border-color: #063980;
 }
 #section-ability .text {
-    color: #087c82;
+    color: #063980;
 }
 
 #section-roll, #section-roll .item-icon {
