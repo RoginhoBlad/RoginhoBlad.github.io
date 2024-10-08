@@ -134,11 +134,11 @@
 /* Colors */
 /* ------------------------------------------------------------------------- */
 #section-ability, #section-ability .item-icon {
-    background-color: grey;
-    border-color: grey;
+    background-color: #10d4de;
+    border-color: #10d4de;
 }
 #section-ability .text {
-    color: grey;
+    color: #10d4de;
 }
 
 #section-roll, #section-roll .item-icon {
@@ -227,7 +227,7 @@ p, hr {
 
 hr {
     border: 0px;
-    border-top: 1px solid cyan;
+    border-top: 1px solid gray;
 }
 
 p:first-child {
