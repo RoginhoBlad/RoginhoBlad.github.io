@@ -124,7 +124,7 @@ data_movement = [
         "bullets": [
             "Se puder pairar, pode permanecer no ar nessas circunstâncias."
         ],
-        "icon": "winged-arrow",
+        "icon": "feathered-wing",
         "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     }
 ];

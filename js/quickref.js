@@ -119,10 +119,18 @@ function makeCard(r,copy=false) {
     for(const [idx,line] of [c.description,...c.bullets].entries()){const p=el("p",idx===0?"lead":"");p.append(linked(line,r));body.append(p);}
     body.append(el("p","source",c.reference));
     star.onclick=()=>{
+        const previousTop = item.getBoundingClientRect().top;
         if(favorites.has(r.id))favorites.delete(r.id);else favorites.add(r.id);
         try{localStorage.setItem("quickref-favoritos-v1",JSON.stringify([...favorites]));}catch{}
         const original=document.getElementById(r.id).querySelector(".favorite-star");starState(original,r);
-        syncFavorites();applySearch();if(copy)original.focus();
+        syncFavorites();
+        if (search.value.trim()) applySearch();
+        if (copy) {
+            original.focus({preventScroll:true});
+        } else if (window.scrollY > 0) {
+            const shift = item.getBoundingClientRect().top - previousTop;
+            if (Math.abs(shift) >= 0.5) window.scrollBy(0, shift);
+        }
     };
     head.append(toggle,star);item.append(head,body);return item;
 }
@@ -164,7 +172,17 @@ function reveal(id){
     setSection(item.closest(".section-container"),true);
     const btn=item.querySelector(".card-toggle");if(btn.getAttribute("aria-expanded")==="false")btn.click();
     btn.focus({preventScroll:true});item.scrollIntoView({block:"center"});
+    item.classList.remove("link-highlight");
+    // Reinicia o efeito mesmo quando o mesmo destino é clicado novamente.
+    void item.offsetWidth;
+    item.classList.add("link-highlight");
 }
 syncFavorites();search.addEventListener("input",applySearch);
 window.addEventListener("hashchange",()=>reveal(location.hash.slice(1)));
 if(location.hash)reveal(location.hash.slice(1));
+
+document.addEventListener("animationend", function (event) {
+    if (event.animationName === "link-arrival" || event.animationName === "link-arrival-still") {
+        event.target.classList.remove("link-highlight");
+    }
+});

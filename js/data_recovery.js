@@ -71,7 +71,7 @@ data_recovery = [
     },
     {
         "title": "Nocautear uma criatura",
-        "icon": "back-pain",
+        "icon": "knocked-out-stars",
         "subtitle": "Ataque corpo a corpo",
         "description": "Quando um ataque corpo a corpo seu reduziria uma criatura a 0 PV, você pode deixá-la com 1 PV. Ela fica Inconsciente e inicia um descanso curto.",
         "bullets": [

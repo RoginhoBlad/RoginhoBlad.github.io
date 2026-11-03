@@ -1,7 +1,7 @@
 data_mastery = [
     {
         "title": "Afligir",
-        "icon": "arrows-shield",
+        "icon": "wood-axe",
         "subtitle": "Machadinha",
         "description": "Ao acertar e causar dano, você ganha vantagem na sua próxima jogada de ataque contra o mesmo alvo antes do fim do seu próximo turno.",
         "bullets": [],
@@ -9,7 +9,7 @@ data_mastery = [
     },
     {
         "title": "Ágil",
-        "icon": "mixed-swords",
+        "icon": "plain-dagger",
         "subtitle": "Adaga",
         "description": "Faça o ataque adicional da propriedade Leve como parte da ação Atacar. Isso libera sua ação bônus. O ataque adicional de Leve continua limitado a uma vez por turno.",
         "bullets": [],
@@ -17,7 +17,7 @@ data_mastery = [
     },
     {
         "title": "Derrubar",
-        "icon": "harpoon-trident",
+        "icon": "trident",
         "subtitle": "Tridente",
         "description": "Ao acertar, você pode exigir uma salvaguarda de Constituição. Em uma falha, o alvo fica Caído.",
         "bullets": [
@@ -27,7 +27,7 @@ data_mastery = [
     },
     {
         "title": "Drenar",
-        "icon": "flat-hammer",
+        "icon": "spiked-mace",
         "subtitle": "Maça",
         "description": "Ao acertar, imponha desvantagem à próxima jogada de ataque do alvo antes do início do seu próximo turno.",
         "bullets": [],
@@ -53,7 +53,7 @@ data_mastery = [
     },
     {
         "title": "Lentidão",
-        "icon": "pocket-bow",
+        "icon": "bowman",
         "subtitle": "Arco longo",
         "description": "Ao acertar e causar dano, você pode reduzir o Deslocamento do alvo em 3 m até o início do seu próximo turno. Vários acertos com essa maestria não aumentam a redução além de 3 m.",
         "bullets": [],
@@ -61,7 +61,7 @@ data_mastery = [
     },
     {
         "title": "Trespassar",
-        "icon": "axe-swing",
+        "icon": "halberd",
         "subtitle": "Alabarda",
         "description": "Uma vez por turno, após acertar um ataque corpo a corpo com a arma, você pode atacar outra criatura com a mesma arma. Ela precisa estar ao seu alcance e a até 1,5 m da primeira.",
         "bullets": [
@@ -70,6 +70,7 @@ data_mastery = [
         "reference": "Livro do Jogador 2024 · Equipamento · Propriedades de maestria"
     }
 ];
+
 data_tool_basics = [
     {
         "title": "Como fazer o teste",
@@ -96,6 +97,7 @@ data_tool_basics = [
         "reference": "Livro do Jogador 2024 · Equipamento · Fabricação"
     }
 ];
+
 data_artisan = [
     {
         "title": "Carpinteiro",
@@ -169,7 +171,7 @@ data_artisan = [
     },
     {
         "title": "Oleiro",
-        "icon": "flower-pot",
+        "icon": "anfora-grega",
         "subtitle": "Inteligência",
         "description": "Determinar o que um recipiente de cerâmica conteve nas últimas 24 horas, CD 15.",
         "bullets": [
@@ -179,7 +181,7 @@ data_artisan = [
     },
     {
         "title": "Pedreiro",
-        "icon": "claw-hammer",
+        "icon": "stone-crafting",
         "subtitle": "Força",
         "description": "Cinzelar um símbolo ou abrir um buraco na pedra, CD 10.",
         "bullets": [
@@ -249,7 +251,7 @@ data_artisan = [
     },
     {
         "title": "Pintor",
-        "icon": "quill",
+        "icon": "palette",
         "subtitle": "Sabedoria",
         "description": "Pintar uma imagem reconhecível de algo que você viu, CD 10.",
         "bullets": [
@@ -259,7 +261,7 @@ data_artisan = [
     },
     {
         "title": "Cozinheiro",
-        "icon": "teapot",
+        "icon": "cooking-pot",
         "subtitle": "Sabedoria",
         "description": "Melhorar o sabor de uma refeição, CD 10. Para detectar alimento estragado ou envenenado, a CD é 15.",
         "bullets": [
@@ -268,6 +270,7 @@ data_artisan = [
         "reference": "Livro do Jogador 2024 · Equipamento · Ferramentas"
     }
 ];
+
 data_kits = [
     {
         "title": "Ferramentas de Ladrão",
@@ -305,7 +308,7 @@ data_kits = [
     },
     {
         "title": "Kit de Falsificação",
-        "icon": "quill-ink",
+        "icon": "wax-seal",
         "subtitle": "Destreza",
         "description": "Imitar até dez palavras da escrita de alguém, CD 15, ou reproduzir um selo de cera, CD 20.",
         "bullets": [],
@@ -313,7 +316,7 @@ data_kits = [
     },
     {
         "title": "Kit de Herbalismo",
-        "icon": "curled-leaf",
+        "icon": "pestle-mortar",
         "subtitle": "Inteligência",
         "description": "Identificar uma planta, CD 10.",
         "bullets": [

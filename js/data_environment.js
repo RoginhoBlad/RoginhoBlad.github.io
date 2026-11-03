@@ -93,7 +93,7 @@ data_environment_vision = [
         "bullets": [
             "O sentido não conta como visão e não detecta alvos no ar."
         ],
-        "icon": "one-eyed",
+        "icon": "lutador-sismico",
         "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     }
 ];

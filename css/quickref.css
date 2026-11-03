@@ -52,3 +52,27 @@ button:focus-visible,input:focus-visible,a:focus-visible { outline:3px solid #ff
 @media(max-width:950px){.card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:590px){.card-grid{grid-template-columns:1fr}.section-title .float-right{font-size:.8rem}.section-title{font-size:1.05rem}.section-toggle{flex-basis:auto}}
 @media print { .search-bar,.favorite-star,#section-favorites{display:none} .rule-card{break-inside:avoid} }
+
+/* Evita deslocamentos fracionários quando a lista entra ou sai do topo. */
+#section-favorites { height: calc-size(auto, round(up, size, 4px)); margin-bottom: 8px; }
+:root { scrollbar-gutter: stable; }
+.favorite-star { flex: 0 0 2rem; padding-inline: 0; }
+/* Dois pulsos no contorno, sem alterar o tamanho ou a leitura do cartão. */
+.rule-card.link-highlight {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    animation: link-arrival 1.5s ease-in-out 2;
+}
+@keyframes link-arrival {
+    0%, 100% { outline-color: transparent; box-shadow: 0 0 0 0 transparent; }
+    35%, 60% {
+        outline-color: var(--accent);
+        box-shadow: 0 0 7px 2px var(--accent);
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .rule-card.link-highlight { animation: link-arrival-still 3s linear; }
+    @keyframes link-arrival-still {
+        from, to { outline-color: var(--accent); box-shadow: 0 0 7px 2px var(--accent); }
+    }
+}
