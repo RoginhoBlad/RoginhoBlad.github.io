@@ -23,7 +23,8 @@ data_reaction = [
         "subtitle": "Responda ao gatilho da magia",
         "description": "Para conjurar como reação, a magia deve indicar esse tempo e seu gatilho precisa ocorrer.",
         "bullets": [
-            "A regra de um espaço gasto para conjurar por turno também vale aqui."
+            "A regra de um espaço gasto para conjurar por turno também vale aqui.",
+            "Depois de usar uma reação, você recupera essa possibilidade no início do seu próximo turno."
         ],
         "icon": "magic-swirl",
         "reference": "Livro do Jogador 2024 · Capítulo 7 · Magias"

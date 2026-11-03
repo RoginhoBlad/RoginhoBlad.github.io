@@ -5,7 +5,8 @@ data_roll_types = [
         "description": "Quando o Mestre pedir um teste, role 1d20 e some o modificador do atributo indicado.",
         "bullets": [
             "Se uma proficiência relevante se aplicar, some o bônus de proficiência.",
-            "Um total igual ou superior à CD é um sucesso."
+            "Um total igual ou superior à CD é um sucesso.",
+            "A Classe de Dificuldade (CD) é o total necessário. Referências usuais: CD 10 para uma tarefa fácil, 15 para média e 20 para difícil."
         ],
         "icon": "stairs-goal",
         "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
@@ -29,7 +30,9 @@ data_roll_types = [
             "Um total igual ou superior à Classe de Armadura do alvo acerta.",
             "Use o atributo apropriado à arma, magia ou ataque.",
             "No dado, um 1 sempre erra e um 20 sempre acerta e é crítico.",
-            "Em um crítico, jogue duas vezes os dados de dano do ataque e acrescente os modificadores uma só vez."
+            "Em um crítico, jogue duas vezes os dados de dano do ataque e acrescente os modificadores uma só vez.",
+            "A Classe de Armadura (CA) é o número que o ataque precisa alcançar. A CA base sem armadura é 10 + modificador de Destreza, salvo regra específica.",
+            "Ao atacar com uma arma, some ao d20 o modificador do atributo usado e, se tiver proficiência com ela, seu bônus de proficiência. Compare o total à CA do alvo, incluindo a cobertura na direção do ataque."
         ],
         "icon": "sword-brandish",
         "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
@@ -68,7 +71,8 @@ data_roll_mods = [
         "bullets": [
             "O bônus não se soma duas vezes à mesma jogada.",
             "Especialização pode dobrar esse bônus.",
-            "Quando tanto a perícia quanto a ferramenta usadas em um teste forem suas proficiências, você também tem vantagem nesse teste."
+            "Quando tanto a perícia quanto a ferramenta usadas em um teste forem suas proficiências, você também tem vantagem nesse teste.",
+            "Para personagens, o bônus depende do nível total: +2 nos níveis 1–4, +3 em 5–8, +4 em 9–12, +5 em 13–16 e +6 em 17–20."
         ],
         "icon": "master-of-arms",
         "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
@@ -92,7 +96,8 @@ data_roll_mods = [
         "description": "Imediatamente após rolar qualquer dado, você pode gastar sua Inspiração Heroica para rolá-lo novamente.",
         "bullets": [
             "Use o novo resultado.",
-            "Só é possível guardar uma Inspiração Heroica por vez."
+            "Só é possível guardar uma Inspiração Heroica por vez.",
+            "Se receber outra enquanto já tem uma, pode passá-la a um personagem do seu grupo que ainda não tenha."
         ],
         "icon": "star-pupil",
         "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
@@ -105,7 +110,8 @@ data_roll_mods = [
             "Os turnos seguem do maior para o menor resultado.",
             "Se for pego de surpresa pelo início do combate, você tem desvantagem na Iniciativa.",
             "Estar Invisível ao rolar concede vantagem.",
-            "Estar Incapacitado ao rolar impõe desvantagem."
+            "Estar Incapacitado ao rolar impõe desvantagem.",
+            "Em empate entre personagens de jogadores, os jogadores escolhem a ordem. Entre monstros, o Mestre escolhe. Num empate entre personagem e monstro, o Mestre decide."
         ],
         "icon": "sprint",
         "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"

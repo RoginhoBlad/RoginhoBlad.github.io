@@ -1358,3 +1358,13 @@
 .icon-lutador-sismico { background-image: url("../img/%C3%8Dcone%20de%20Lutador%20com%20An%C3%A9is%20S%C3%ADsmicos.png"); }
 
 .icon-anfora-grega { background-image: url("../img/%C3%8Dcone%20Minimalista%20de%20%C3%82nfora%20Grega.png"); }
+
+/* Delapouite, Game-icons.net, CC BY 3.0. */
+/* https://game-icons.net/1x1/delapouite/spiky-pit.html */
+.icon-spiky-pit { background-image: url(../img/spiky-pit.svg); }
+/* https://game-icons.net/1x1/delapouite/floor-hatch.html */
+.icon-floor-hatch { background-image: url(../img/floor-hatch.svg); }
+/* https://game-icons.net/1x1/delapouite/hole.html */
+.icon-hole { background-image: url(../img/hole.svg); }
+
+.icon-barqueiro-estige { background-image: url("../img/Barqueiro%20Sombrio%20no%20Rio%20Serpenteante.png"); }

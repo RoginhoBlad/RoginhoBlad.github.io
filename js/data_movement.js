@@ -6,7 +6,9 @@ data_movement = [
         "bullets": [
             "Você pode dividir o percurso antes e depois das ações e, com vários ataques da ação Atacar, entre esses ataques.",
             "Ao trocar de tipo de deslocamento, desconte do novo limite a distância já percorrida nesse turno.",
-            "Você não pode terminar voluntariamente seu movimento no espaço de outra criatura."
+            "Você não pode terminar voluntariamente seu movimento no espaço de outra criatura.",
+            "Você pode atravessar o espaço de um aliado, de uma criatura Incapacitada, de uma criatura Minúscula ou de uma criatura pelo menos duas categorias maior ou menor que você.",
+            "O espaço de outra criatura conta como terreno difícil, exceto se ela for aliada ou Minúscula. Se terminar o turno no espaço de outra criatura, você fica Caído, salvo se for Minúsculo ou maior que ela."
         ],
         "icon": "run",
         "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"

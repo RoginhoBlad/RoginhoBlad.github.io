@@ -15,7 +15,8 @@ data_ability_types = [
         "subtitle": "Agilidade e precisão",
         "description": "Use Destreza para se equilibrar, agir discretamente ou manipular algo com precisão.",
         "bullets": [
-            "Ela também afeta a Iniciativa, a maioria dos ataques com armas à distância e a CA conforme a armadura."
+            "Ela também afeta a Iniciativa, a maioria dos ataques com armas à distância e a CA conforme a armadura.",
+            "Sem armadura, o cálculo básico de Classe de Armadura é 10 + seu modificador de Destreza. Com armadura, consulte o cálculo daquela armadura."
         ],
         "icon": "high-five",
         "reference": "Livro do Jogador 2024 · Capítulo 1 · Atributos e perícias"
@@ -65,7 +66,9 @@ data_ability_sub_types = [
         "title": "Atletismo",
         "subtitle": "Força",
         "description": "Vença um desafio físico que exija potência, como escalar uma superfície escorregadia ou nadar em águas turbulentas.",
-        "bullets": [],
+        "bullets": [
+            "Quando o Mestre pedir este teste com o atributo habitual, role 1d20 + seu modificador de Força. Acrescente o bônus de proficiência se tiver proficiência em Atletismo."
+        ],
         "icon": "discobolus",
         "reference": "Livro do Jogador 2024 · Capítulo 1 · Atributos e perícias"
     },
@@ -73,7 +76,9 @@ data_ability_sub_types = [
         "title": "Acrobacia",
         "subtitle": "Destreza",
         "description": "Mantenha o equilíbrio em uma superfície instável ou execute uma manobra acrobática, como atravessar uma corda esticada.",
-        "bullets": [],
+        "bullets": [
+            "Quando o Mestre pedir este teste com o atributo habitual, role 1d20 + seu modificador de Destreza. Acrescente o bônus de proficiência se tiver proficiência em Acrobacia."
+        ],
         "icon": "acrobatic",
         "reference": "Livro do Jogador 2024 · Capítulo 1 · Atributos e perícias"
     },
@@ -82,7 +87,8 @@ data_ability_sub_types = [
         "subtitle": "Destreza",
         "description": "Mova-se sem chamar atenção ou tente se esconder.",
         "bullets": [
-            "Em combate, a ação Esconder define os requisitos de posicionamento e a CD."
+            "Em combate, a ação Esconder define os requisitos de posicionamento e a CD.",
+            "Quando o Mestre pedir este teste com o atributo habitual, role 1d20 + seu modificador de Destreza. Acrescente o bônus de proficiência se tiver proficiência em Furtividade."
         ],
         "icon": "ninja-mask",
         "reference": "Livro do Jogador 2024 · Capítulo 1 · Atributos e perícias"
@@ -91,7 +97,9 @@ data_ability_sub_types = [
         "title": "Prestidigitação",
         "subtitle": "Destreza",
         "description": "Manipule um objeto discretamente, esconda algo pequeno na mão ou tente retirar um item sem que alguém perceba.",
-        "bullets": [],
+        "bullets": [
+            "Quando o Mestre pedir este teste com o atributo habitual, role 1d20 + seu modificador de Destreza. Acrescente o bônus de proficiência se tiver proficiência em Prestidigitação."
+        ],
         "icon": "magic-swirl",
         "reference": "Livro do Jogador 2024 · Capítulo 1 · Atributos e perícias"
     },
@@ -99,7 +107,9 @@ data_ability_sub_types = [
         "title": "Arcanismo",
         "subtitle": "Inteligência",
         "description": "Recorde conhecimento sobre magia, itens mágicos, tradições arcanas ou os planos de existência.",
-        "bullets": [],
+        "bullets": [
+            "Quando o Mestre pedir este teste com o atributo habitual, role 1d20 + seu modificador de Inteligência. Acrescente o bônus de proficiência se tiver proficiência em Arcanismo."
+        ],
         "icon": "gargoyle",
         "reference": "Livro do Jogador 2024 · Capítulo 1 · Atributos e perícias"
     },
@@ -107,7 +117,9 @@ data_ability_sub_types = [
         "title": "História",
         "subtitle": "Inteligência",
         "description": "Reconheça o significado de um acontecimento, povo, reino ou conflito do passado.",
-        "bullets": [],
+        "bullets": [
+            "Quando o Mestre pedir este teste com o atributo habitual, role 1d20 + seu modificador de Inteligência. Acrescente o bônus de proficiência se tiver proficiência em História."
+        ],
         "icon": "book-pile",
         "reference": "Livro do Jogador 2024 · Capítulo 1 · Atributos e perícias"
     },
@@ -116,7 +128,8 @@ data_ability_sub_types = [
         "subtitle": "Inteligência",
         "description": "Faça deduções a partir de pistas.",
         "bullets": [
-            "Por exemplo, examine um mecanismo para descobrir como ele funciona."
+            "Por exemplo, examine um mecanismo para descobrir como ele funciona.",
+            "Quando o Mestre pedir este teste com o atributo habitual, role 1d20 + seu modificador de Inteligência. Acrescente o bônus de proficiência se tiver proficiência em Investigação."
         ],
         "icon": "sherlock-holmes",
         "reference": "Livro do Jogador 2024 · Capítulo 1 · Atributos e perícias"
@@ -126,7 +139,8 @@ data_ability_sub_types = [
         "subtitle": "Inteligência",
         "description": "Recorde conhecimento sobre terreno, clima, plantas ou animais.",
         "bullets": [
-            "Por exemplo, identifique uma espécie por suas características."
+            "Por exemplo, identifique uma espécie por suas características.",
+            "Quando o Mestre pedir este teste com o atributo habitual, role 1d20 + seu modificador de Inteligência. Acrescente o bônus de proficiência se tiver proficiência em Natureza."
         ],
         "icon": "fruiting",
         "reference": "Livro do Jogador 2024 · Capítulo 1 · Atributos e perícias"
@@ -135,7 +149,9 @@ data_ability_sub_types = [
         "title": "Religião",
         "subtitle": "Inteligência",
         "description": "Reconheça símbolos sagrados, tradições, ritos ou ensinamentos de cultos e divindades.",
-        "bullets": [],
+        "bullets": [
+            "Quando o Mestre pedir este teste com o atributo habitual, role 1d20 + seu modificador de Inteligência. Acrescente o bônus de proficiência se tiver proficiência em Religião."
+        ],
         "icon": "church",
         "reference": "Livro do Jogador 2024 · Capítulo 1 · Atributos e perícias"
     },
@@ -144,7 +160,8 @@ data_ability_sub_types = [
         "subtitle": "Sabedoria",
         "description": "Interprete o comportamento de um animal ou tente acalmá-lo.",
         "bullets": [
-            "A perícia também pode se aplicar ao influenciar uma fera."
+            "A perícia também pode se aplicar ao influenciar uma fera.",
+            "Quando o Mestre pedir este teste com o atributo habitual, role 1d20 + seu modificador de Sabedoria. Acrescente o bônus de proficiência se tiver proficiência em Adestrar Animais."
         ],
         "icon": "paw",
         "reference": "Livro do Jogador 2024 · Capítulo 1 · Atributos e perícias"
@@ -153,7 +170,9 @@ data_ability_sub_types = [
         "title": "Intuição",
         "subtitle": "Sabedoria",
         "description": "Observe gestos, tom de voz e atitudes para avaliar a intenção ou o estado emocional de uma criatura.",
-        "bullets": [],
+        "bullets": [
+            "Quando o Mestre pedir este teste com o atributo habitual, role 1d20 + seu modificador de Sabedoria. Acrescente o bônus de proficiência se tiver proficiência em Intuição."
+        ],
         "icon": "smart",
         "reference": "Livro do Jogador 2024 · Capítulo 1 · Atributos e perícias"
     },
@@ -162,7 +181,9 @@ data_ability_sub_types = [
         "subtitle": "Sabedoria",
         "description": "Identifique uma enfermidade ou avalie a causa de uma morte.",
         "bullets": [
-            "A perícia também pode ajudar a estabilizar uma criatura com 0 PV."
+            "A perícia também pode ajudar a estabilizar uma criatura com 0 PV.",
+            "Para estabilizar uma criatura com 0 PV, use a ação Ajudar e faça um teste de Sabedoria (Medicina) CD 10. Em um sucesso, a criatura fica Estável.",
+            "Quando o Mestre pedir este teste com o atributo habitual, role 1d20 + seu modificador de Sabedoria. Acrescente o bônus de proficiência se tiver proficiência em Medicina."
         ],
         "icon": "medical-pack",
         "reference": "Livro do Jogador 2024 · Capítulo 1 · Atributos e perícias"
@@ -171,7 +192,9 @@ data_ability_sub_types = [
         "title": "Percepção",
         "subtitle": "Sabedoria",
         "description": "Veja, ouça ou detecte algo que seria fácil ignorar, como passos atrás de uma porta ou uma criatura escondida.",
-        "bullets": [],
+        "bullets": [
+            "Quando o Mestre pedir este teste com o atributo habitual, role 1d20 + seu modificador de Sabedoria. Acrescente o bônus de proficiência se tiver proficiência em Percepção."
+        ],
         "icon": "aerial-signal",
         "reference": "Livro do Jogador 2024 · Capítulo 1 · Atributos e perícias"
     },
@@ -180,7 +203,8 @@ data_ability_sub_types = [
         "subtitle": "Sabedoria",
         "description": "Siga rastros, oriente-se no ambiente ou procure alimento.",
         "bullets": [
-            "O Mestre considera o terreno e as condições ao definir a dificuldade."
+            "O Mestre considera o terreno e as condições ao definir a dificuldade.",
+            "Quando o Mestre pedir este teste com o atributo habitual, role 1d20 + seu modificador de Sabedoria. Acrescente o bônus de proficiência se tiver proficiência em Sobrevivência."
         ],
         "icon": "uncertainty",
         "reference": "Livro do Jogador 2024 · Capítulo 1 · Atributos e perícias"
@@ -189,7 +213,9 @@ data_ability_sub_types = [
         "title": "Atuação",
         "subtitle": "Carisma",
         "description": "Entretenha uma plateia com música, dança, interpretação, narração ou outra forma de apresentação.",
-        "bullets": [],
+        "bullets": [
+            "Quando o Mestre pedir este teste com o atributo habitual, role 1d20 + seu modificador de Carisma. Acrescente o bônus de proficiência se tiver proficiência em Atuação."
+        ],
         "icon": "duality",
         "reference": "Livro do Jogador 2024 · Capítulo 1 · Atributos e perícias"
     },
@@ -197,7 +223,9 @@ data_ability_sub_types = [
         "title": "Enganação",
         "subtitle": "Carisma",
         "description": "Faça uma mentira parecer convincente ou esconda sua intenção por meio de palavras e comportamento.",
-        "bullets": [],
+        "bullets": [
+            "Quando o Mestre pedir este teste com o atributo habitual, role 1d20 + seu modificador de Carisma. Acrescente o bônus de proficiência se tiver proficiência em Enganação."
+        ],
         "icon": "robber",
         "reference": "Livro do Jogador 2024 · Capítulo 1 · Atributos e perícias"
     },
@@ -205,7 +233,9 @@ data_ability_sub_types = [
         "title": "Intimidação",
         "subtitle": "Carisma",
         "description": "Tente influenciar uma criatura por pressão, ameaça ou demonstração de força.",
-        "bullets": [],
+        "bullets": [
+            "Quando o Mestre pedir este teste com o atributo habitual, role 1d20 + seu modificador de Carisma. Acrescente o bônus de proficiência se tiver proficiência em Intimidação."
+        ],
         "icon": "vile-fluid",
         "reference": "Livro do Jogador 2024 · Capítulo 1 · Atributos e perícias"
     },
@@ -213,7 +243,9 @@ data_ability_sub_types = [
         "title": "Persuasão",
         "subtitle": "Carisma",
         "description": "Tente obter cooperação por meio de argumentos sinceros, tato ou diplomacia.",
-        "bullets": [],
+        "bullets": [
+            "Quando o Mestre pedir este teste com o atributo habitual, role 1d20 + seu modificador de Carisma. Acrescente o bônus de proficiência se tiver proficiência em Persuasão."
+        ],
         "icon": "arrest",
         "reference": "Livro do Jogador 2024 · Capítulo 1 · Atributos e perícias"
     }

@@ -22,7 +22,9 @@ data_action = [
             "A cada ataque dessa ação, você pode equipar ou desequipar uma arma antes ou depois de atacar.",
             "Um Ataque Desarmado pode causar dano, agarrar ou empurrar.",
             "Para causar dano com o Ataque Desarmado comum, role o ataque com Força e proficiência.",
-            "Um acerto causa dano contundente igual a 1 + seu modificador de Força."
+            "Um acerto causa dano contundente igual a 1 + seu modificador de Força.",
+            "Ataque à distância: além do alcance normal e até o alcance máximo, role com desvantagem. Além do máximo, o alvo está fora de alcance.",
+            "Se houver um inimigo a até 1,5 m de você que possa vê-lo e não esteja Incapacitado, seus ataques à distância têm desvantagem, inclusive com magia e mesmo se mirar em outro alvo."
         ],
         "icon": "crossed-swords",
         "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
@@ -49,7 +51,8 @@ data_action = [
             "Em cada turno, você só pode gastar um espaço de magia para conjurar.",
             "Observe também o alcance, os componentes e os requisitos de alvo da magia.",
             "Você perde a concentração ao ficar Incapacitado, morrer ou iniciar outro efeito que exija concentração.",
-            "Ao sofrer dano, faça uma salvaguarda de Constituição com CD 10 ou metade do dano, arredondada para baixo, o que for maior, até CD 30."
+            "Ao sofrer dano, faça uma salvaguarda de Constituição com CD 10 ou metade do dano, arredondada para baixo, o que for maior, até CD 30.",
+            "Se o tempo de conjuração for de 1 minuto ou mais, use a ação Usar Magia em cada turno e mantenha a concentração durante a conjuração. Se perder a concentração antes de terminar, a magia falha sem gastar o espaço."
         ],
         "icon": "magic-swirl",
         "reference": "Livro do Jogador 2024 · Capítulo 7 · Magias"
@@ -89,7 +92,8 @@ data_action = [
         "subtitle": "Teste contra a CD de escape",
         "description": "Use uma ação para fazer um teste de Força (Atletismo) ou Destreza (Acrobacia) contra a CD de escape do agarrão.",
         "bullets": [
-            "Em um sucesso, você deixa de estar Agarrado."
+            "Em um sucesso, você deixa de estar Agarrado.",
+            "Para um agarrão comum de Ataque Desarmado, a CD de escape é 8 + modificador de Força de quem agarrou + bônus de proficiência dessa criatura. Se um ataque especial indicar outra CD, use a indicada."
         ],
         "icon": "manacles",
         "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
@@ -131,7 +135,7 @@ data_action = [
         "subtitle": "Use uma ação",
         "description": "Vestir ou retirar um escudo exige a ação Usar Objeto.",
         "bullets": [
-            "Enquanto equipado, um escudo concede seu bônus de CA se você tiver treinamento com escudos."
+            "Um escudo comum concede +2 à Classe de Armadura (CA) enquanto equipado por alguém com treinamento. Você só pode se beneficiar de um escudo por vez."
         ],
         "icon": "round-shield",
         "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"

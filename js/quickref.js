@@ -18,7 +18,11 @@ const groups = [
     [data_artisan, "artisan-cards"],
     [data_kits, "kit-cards"],
     [data_recovery, "recovery-cards"],
-    [data_environment_other, "environment-other"]
+    [data_environment_other, "environment-other"],
+    [data_hazard_climate, "hazard-climate"],
+    [data_hazard_danger, "hazard-danger"],
+    [data_hazard_trap, "hazard-trap"],
+    [data_hazard_damage, "hazard-damage"]
 ];
 const records = new Map();
 const terms = new Map();

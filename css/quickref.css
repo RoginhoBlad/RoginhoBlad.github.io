@@ -76,3 +76,4 @@ button:focus-visible,input:focus-visible,a:focus-visible { outline:3px solid #ff
         from, to { outline-color: var(--accent); box-shadow: 0 0 7px 2px var(--accent); }
     }
 }
+#section-traps { --accent: #754254; }
