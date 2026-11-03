@@ -1,181 +1,184 @@
 data_condition = [
     {
-        title: "Agarrado",
-        icon: "grab",
-        subtitle: "Você está agarrado",
-        description: "Você está agarrado",
-        reference: "PHB, pg. 291.",
-        bullets: [
-            "Seu deslocamento se torna 0, e você não pode se beneficiar de qualquer bônus em seu deslocamento.",
-            "A condição encerra caso a criatura que a agarrou fique incapacitada.",
-            "A condição se encerra se um efeito remover a criatura agarrada do alcance da criatura que a agarrou ou do efeito que causa a condição."
-        ]
+        "title": "Agarrado",
+        "subtitle": "Sem deslocamento",
+        "description": "Seu Deslocamento é 0 e não pode aumentar.",
+        "bullets": [
+            "Você tem desvantagem nos ataques contra qualquer alvo diferente de quem o agarrou.",
+            "Quem o agarrou pode arrastá-lo ou carregá-lo.",
+            "Cada metro custa um metro adicional, exceto se você for Minúsculo ou pelo menos duas categorias de tamanho menor.",
+            "Você pode usar uma ação para escapar.",
+            "O agarrão também termina se quem o agarrou ficar Incapacitado, soltá-lo ou se a distância ultrapassar o alcance do agarrão."
+        ],
+        "icon": "grab",
+        "reference": "Livro do Jogador 2024 · Glossário de Regras · Imobilizado"
     },
     {
-        title: "Amedrontado",
-        icon: "sharp-smile",
-        subtitle: "Você está assustado",
-        description: "Você está assustado",
-        reference: "PHB, pg. 291.",
-        bullets: [
-            "Você sofre desvantagem em testes de habilidade e jogadas de ataque enquanto a fonte do seu medo estiver em sua linha de visão.",
-            "Você não pode se mover voluntariamente para uma posição que a faça terminar o turno mais próxima da sua fonte de medo do que sua posição inicial."
-        ]
+        "title": "Amedrontado",
+        "subtitle": "Evite a fonte do medo",
+        "description": "Você não pode se aproximar voluntariamente da fonte do medo.",
+        "bullets": [
+            "Enquanto ela estiver na sua linha de visão, você tem desvantagem nos testes de atributo e nas jogadas de ataque."
+        ],
+        "icon": "sharp-smile",
+        "reference": "Livro do Jogador 2024 · Glossário de Regras · Amedrontado"
     },
     {
-        title: "Atordoado",
-        icon: "internal-injury",
-        subtitle: "Você está desnorteado",
-        description: "Você está desnorteado",
-        reference: "PHB, pg. 291.",
-        bullets: [
-            "Você está incapacitado, não pode se mover e somente pode falar hesitantemente.",
-            "Jogadas de ataque contra você possuem vantagem.",
-            "Você falha automaticamente em testes de resistência de Força e Destreza."
-        ]
+        "title": "Atordoado",
+        "subtitle": "Incapacitado e vulnerável a ataques",
+        "description": "Você fica Incapacitado.",
+        "bullets": [
+            "Atordoado, por si só, permite que você use seu deslocamento.",
+            "Você falha automaticamente em salvaguardas de Força e Destreza.",
+            "Ataques contra você têm vantagem."
+        ],
+        "icon": "internal-injury",
+        "reference": "Livro do Jogador 2024 · Glossário de Regras · Atordoado"
     },
     {
-        title: "Caído",
-        icon: "crawl",
-        subtitle: "Você está no chão",
-        description: "Você está no chão",
-        reference: "PHB, pg. 291.",
-        bullets: [
-            "Sua única opção de movimento é rastejar, a menos que se levante.",
-            "Você possui desvangagem em jogadas de ataque.",
-            "Jogadas de ataque contra você possuem vantagem se o atacante estiver a 1,5 metro de você. De outra maneira, a jogada de ataque possui desvantagem."
-        ]
+        "title": "Caído",
+        "subtitle": "Rasteje ou levante-se",
+        "description": "Você pode rastejar ou gastar metade do seu Deslocamento, arredondada para baixo, para se levantar.",
+        "bullets": [
+            "Com Deslocamento 0, não consegue se levantar.",
+            "Seus ataques têm desvantagem.",
+            "Ataques contra você têm vantagem se o atacante estiver a até 1,5 m e desvantagem se estiver mais longe."
+        ],
+        "icon": "crawl",
+        "reference": "Livro do Jogador 2024 · Glossário de Regras · Caído"
     },
     {
-        title: "Cego",
-        icon: "one-eyed",
-        subtitle: "Você não pode ver",
-        description: "Você não pode ver",
-        reference: "PHB, pg. 291.",
-        bullets: [
-            "Você falha automaticamente em qualquer teste de habilidade que requeira o uso da visão.",
-            "Você tem desvantagem em rolagens de ataque.",
-            "Rolagens de ataque contra você possuem vantagem."
-        ]
+        "title": "Cego",
+        "subtitle": "Sem visão",
+        "description": "Você não enxerga e falha automaticamente em testes de atributo que dependam da visão.",
+        "bullets": [
+            "Você ataca com desvantagem.",
+            "Ataques contra você têm vantagem."
+        ],
+        "icon": "one-eyed",
+        "reference": "Livro do Jogador 2024 · Glossário de Regras · Cego"
     },
     {
-        title: "Enfeitiçado",
-        icon: "smitten",
-        subtitle: "Você está enfeitiçado",
-        description: "Você está enfeitiçado por outra criatura",
-        reference: "PHB, pg. 292.",
-        bullets: [
-            "Você não pode atacar quem te enfeitiçou ou tê-lo como alvo de habilidades ou efeitos mágicos nocivos.",
-            "Quem o enfeitiçou possui vantagem em testes de habilidade feitos para interagir socialmente com a criatura."
-        ]
+        "title": "Enfeitiçado",
+        "subtitle": "Proteção para quem o enfeitiçou",
+        "description": "Você não pode atacar quem o enfeitiçou nem escolher essa criatura como alvo de habilidades ou efeitos mágicos que causem dano.",
+        "bullets": [
+            "Quem o enfeitiçou tem vantagem nos testes de atributo para interagir socialmente com você."
+        ],
+        "icon": "smitten",
+        "reference": "Livro do Jogador 2024 · Glossário de Regras · Enfeitiçado"
     },
     {
-        title: "Envenenado",
-        icon: "deathcab",
-        subtitle: "Você é afetado por veneno",
-        description: "Você é afetado por um veneno",
-        reference: "PHB, pg. 292.",
-        bullets: [
-            "Você possui desvantagem em jogadas de ataque e testes de habilidade."
-        ]
+        "title": "Envenenado",
+        "subtitle": "Ataques e testes prejudicados",
+        "description": "Você tem desvantagem nas jogadas de ataque e nos testes de atributo.",
+        "bullets": [],
+        "icon": "deathcab",
+        "reference": "Livro do Jogador 2024 · Glossário de Regras · Envenenado"
     },
     {
-        title: "Exaustão",
-        icon: "crawl",
-        subtitle: "Você está sem forças",
-        description: "A exaustão é medida em seis níveis",
-        reference: "PHB, pg. 292.",
-        bullets: [
-            "<table><tr><th>Nível</th><th></th><th></th><th style='text-align:left'>Efeito</th></tr><tr><td>1</td><td></td><td></td><td>Desvantagem em testes de habilidade</td></tr><tr><td>2</td><td></td><td></td><td>Deslocamento reduzido à metade</td></tr><tr><td>3</td><td></td><td></td><td>Desvantagem nas jogadas de ataque e testes de resistência</td></tr><tr><td>4</td><td></td><td></td><td>Máximo de pontos de vida reduzido à metade</td></tr><tr><td>5</td><td></td><td></td><td>Deslocamento reduzido à 0</td></tr><tr><td>6</td><td></td><td></td><td>Morte</td></tr></table>",
-            "Você não sofre apenas o efeito do seu nível atual de exaustão, mas de todos os níveis anteriores.",
-            "Terminar um descanso longo reduz a exaustão de uma criatura em 1 nível, contanto que ela também tenha ingerido um pouco de água e comida."
-        ]
+        "title": "Exaustão",
+        "subtitle": "Penalidade por nível",
+        "description": "A cada nível, subtraia 2 de seus Testes de D20 e 1,5 m do seu Deslocamento.",
+        "bullets": [
+            "Isso afeta ataques, salvaguardas e testes de atributo.",
+            "No nível 2, por exemplo, as penalidades são −4 e −3 m.",
+            "Ao atingir o nível 6, você morre.",
+            "Um Descanso Longo remove um nível.",
+            "A condição termina no nível 0.",
+            "Algumas causas, como desidratação, têm requisitos próprios para a recuperação."
+        ],
+        "icon": "crawl",
+        "reference": "Livro do Jogador 2024 · Glossário de Regras · Exaustão"
     },
     {
-        title: "Impedido",
-        icon: "imprisoned",
-        subtitle: "Você está contido",
-        description: "Você está contido",
-        reference: "PHB, pg. 292.",
-        bullets: [
-            "Seu deslocamento se torna 0, e você não pode se beneficiar de qualquer bônus em seu deslocamento.",
-            "Jogadas de ataque contra você possuem vantagem.",
-            "Você sofre desvantagem em jogadas de ataque.",
-            "Você sofre desvantagem em testes de resistência de Destreza."
-        ]
+        "title": "Contido",
+        "subtitle": "Movimento e ataques limitados",
+        "description": "Seu Deslocamento é 0 e não pode aumentar.",
+        "bullets": [
+            "Você tem desvantagem nas jogadas de ataque.",
+            "Ataques contra você têm vantagem.",
+            "Você tem desvantagem nas salvaguardas de Destreza."
+        ],
+        "icon": "imprisoned",
+        "reference": "Livro do Jogador 2024 · Glossário de Regras · Contido"
     },
     {
-        title: "Incapacitado",
-        icon: "internal-injury",
-        subtitle: "Você não pode agir ou reagir",
-        description: "Você não pode realizar ações ou reações",
-        reference: "PHB, pg. 292.",
-        bullets: [
-        ]
+        "title": "Incapacitado",
+        "subtitle": "Sem ações, fala ou concentração",
+        "description": "Você não pode executar ações, ações bônus ou reações.",
+        "bullets": [
+            "Sua concentração termina.",
+            "Você não pode falar.",
+            "Se estiver Incapacitado ao rolar Iniciativa, faça a jogada com desvantagem."
+        ],
+        "icon": "internal-injury",
+        "reference": "Livro do Jogador 2024 · Glossário de Regras · Incapacitado"
     },
     {
-        title: "Inconsciente",
-        icon: "coma",
-        subtitle: "Você está desacordado",
-        description: "Você está desacordado",
-        reference: "PHB, pg. 292.",
-        bullets: [
-            "Você está incapacitado, não pode se mover ou falar e não tem ciência de seus arredores.",
-            "Você larga tudo que estiver segurando e fica caído.",
-            "Você falha automaticamente em testes de resistência de Força ou Destreza.",
-            "Jogadas de ataque contra você possuem vantagem.",
-            "Qualquer ataque que o atinja é um acerto crítico, se o atacante estiver a 1,5 metro de você."
-        ]
+        "title": "Inconsciente",
+        "subtitle": "Desacordado e caído",
+        "description": "Você fica Incapacitado e Caído.",
+        "bullets": [
+            "Você solta tudo o que está segurando.",
+            "Você perde a percepção do entorno.",
+            "Seu Deslocamento é 0 e não pode aumentar.",
+            "Você falha automaticamente em salvaguardas de Força e Destreza.",
+            "Ataques contra você têm vantagem.",
+            "Se o atacante estiver a até 1,5 m, qualquer ataque que o acerte é crítico.",
+            "Ao recuperar a consciência, você continua Caído."
+        ],
+        "icon": "coma",
+        "reference": "Livro do Jogador 2024 · Glossário de Regras · Inconsciente"
     },
     {
-        title: "Invisível",
-        icon: "invisible",
-        subtitle: "Você não pode ser visto",
-        description: "Você não pode ser visto sem a ajuda de magia ou sentido especial",
-        reference: "PHB, pg. 293.",
-        bullets: [
-            "Para o propósito de se esconder, você é considerado em área de escuridão densa.",
-            "Você ainda pode ser detectado por algum barulho que você faça ou rastros que você deixe.",
-            "Jogadas de ataque contra você sofrem desvantagem",
-            "Você possui vantagem em jogadas de ataque."
-        ]
+        "title": "Invisível",
+        "subtitle": "Oculto à visão",
+        "description": "Se estiver Invisível ao rolar Iniciativa, você tem vantagem.",
+        "bullets": [
+            "Seu equipamento vestido ou carregado também fica oculto.",
+            "Um efeito que exige ver o alvo só pode afetá-lo se o criador do efeito conseguir vê-lo.",
+            "Você ataca com vantagem e os ataques contra você têm desvantagem.",
+            "Esses benefícios não se aplicam contra uma criatura que consiga vê-lo."
+        ],
+        "icon": "invisible",
+        "reference": "Livro do Jogador 2024 · Glossário de Regras · Invisível"
     },
     {
-        title: "Paralisado",
-        icon: "internal-injury",
-        subtitle: "Você está paralisado",
-        description: "Você não pode fazer nada",
-        reference: "PHB, pg. 293.",
-        bullets: [
-            "Você está incapacitado e não pode se mover ou falar.",
-            "Você falha automaticamente em teste de resistência de Força e Destreza.",
-            "Jogadas de ataque contra você possuem vantagem.",
-            "Qualquer ataque que atinja você é um acerto crítico, se o atacante estiver a 1,5 metro de você."
-        ]
+        "title": "Paralisado",
+        "subtitle": "Incapacitado e imóvel",
+        "description": "Você fica Incapacitado.",
+        "bullets": [
+            "Seu Deslocamento é 0 e não pode aumentar.",
+            "Você falha automaticamente em salvaguardas de Força e Destreza.",
+            "Ataques contra você têm vantagem.",
+            "Qualquer ataque que o acerte é crítico se o atacante estiver a até 1,5 m."
+        ],
+        "icon": "internal-injury",
+        "reference": "Livro do Jogador 2024 · Glossário de Regras · Paralisado"
     },
     {
-        title: "Petrificado",
-        icon: "stone-pile",
-        subtitle: "Você está transformado em pedra",
-        description: "Você está transformado, juntamente com todos os objetos não-mágicos que estiver vestindo ou carregando, em uma substância sólida e inanimada (geralmente pedra)",
-        reference: "PHB, pg. 293.",
-        bullets: [
-            "Seu peso é multiplicado por dez, e para de envelhecer.",
-            "Você está incapacitado, não pode se mover ou falar, e não tem ciência de seus arredores.",
-            "Jogadas de ataque contra você possuem vantagem.",
-            "Você falha automaticamente em testes de resistência de Força e Destreza.",
-            "Você tem resistência a todos os tipos de dano.",
-            "Você fica imune a veneno e doenças, embora um veneno ou doença previamente presente em seu sistema seja apenas suspenso, não neutralizado."
-        ]
+        "title": "Petrificado",
+        "subtitle": "Transformado em matéria sólida",
+        "description": "Você e os objetos não mágicos que veste ou carrega viram matéria sólida e inanimada, geralmente pedra.",
+        "bullets": [
+            "Seu peso se multiplica por dez e você para de envelhecer.",
+            "Você fica Incapacitado.",
+            "Seu Deslocamento é 0 e não pode aumentar.",
+            "Ataques contra você têm vantagem.",
+            "Você falha automaticamente em salvaguardas de Força e Destreza.",
+            "Você tem resistência a todos os danos.",
+            "Você tem imunidade à condição Envenenado."
+        ],
+        "icon": "stone-pile",
+        "reference": "Livro do Jogador 2024 · Glossário de Regras · Petrificado"
     },
     {
-        title: "Surdo",
-        icon: "elf-ear",
-        subtitle: "Você não pode ouvir",
-        description: "Você não pode ouvir",
-        reference: "PHB, pg. 293.",
-        bullets: [
-            "Você falha automaticamente em qualquer teste de habilidade que requeira o uso da audição."
-        ]
+        "title": "Surdo",
+        "subtitle": "Sem audição",
+        "description": "Você não ouve e falha automaticamente em testes de atributo que dependam da audição.",
+        "bullets": [],
+        "icon": "elf-ear",
+        "reference": "Livro do Jogador 2024 · Glossário de Regras · Surdo"
     }
-]
+];

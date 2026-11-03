@@ -1336,3 +1336,8 @@
 .icon-zeus-sword { background-image: url(../img/zeus-sword.png);}
 .icon-zigzag-leaf { background-image: url(../img/zigzag-leaf.png);}
 .icon-zigzag-tune { background-image: url(../img/zigzag-tune.png);}
+/* Delapouite, Game-icons.net, CC BY 3.0 (https://creativecommons.org/licenses/by/3.0/).
+   https://game-icons.net/1x1/delapouite/stomach.html
+   https://game-icons.net/1x1/delapouite/waterskin.html */
+.icon-stomach { background-image: url(../img/stomach.svg); }
+.icon-waterskin { background-image: url(../img/waterskin.svg); }

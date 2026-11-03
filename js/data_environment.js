@@ -1,161 +1,193 @@
 data_environment_obscurance = [
     {
-        title: "Escuridão leve",
-        icon: "bleeding-eye",
-        subtitle: "Desvantagem em Percepção",
-        description: "Luz difusa, névoa irregular, folhagem moderada",
-        reference: "PHB, pg. 185.",
-        bullets: [
-            "Criaturas possuem desvantagem em <b>testes de Sabedoria (Percepção)</b> que dependem da luz."
-        ]
+        "title": "Parcialmente obscurecido",
+        "subtitle": "Visão prejudicada",
+        "description": "Penumbra, névoa irregular ou folhagem moderada podem dificultar a visão.",
+        "bullets": [
+            "Faça com desvantagem testes de Sabedoria (Percepção) para enxergar algo nesse espaço."
+        ],
+        "icon": "bleeding-eye",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Escuridão densa",
-        icon: "lightning-tear",
-        subtitle: "Visão bloqueada",
-        description: "Escuridão, névoa opaca, folhagem densa",
-        reference: "PHB, pg. 185.",
-        bullets: [
-            "Uma criatura em uma área fortemente obscurecida sofre efetivamente de uma <b>condição de cegueira</b>."
-        ]
+        "title": "Totalmente obscurecido",
+        "subtitle": "Visão bloqueada",
+        "description": "Escuridão, névoa opaca ou folhagem densa podem bloquear a visão.",
+        "bullets": [
+            "Ao tentar ver algo nesse espaço, você sofre os efeitos da condição Cego."
+        ],
+        "icon": "lightning-tear",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     }
-]
+];
 
 data_environment_light = [
     {
-        title: "Luz plena",
-        icon: "star-pupil",
-        subtitle: "Visão normal",
-        description: "Luz brilhante permite que a maioria das criaturas enxerguem normalmente",
-        reference: "PHB, pg. 185.",
-        bullets: [
-            "Mesmo dias nublados ainda fornecem luz brilhante, assim como tochas, lanternas, fogueiras e outras fontes de iluminação dentro de um raio específico."
-        ]
+        "title": "Luz plena",
+        "subtitle": "Visão normal",
+        "description": "A maioria das criaturas enxerga normalmente em luz plena.",
+        "bullets": [
+            "Uma tocha ou lanterna ilumina a área indicada na descrição do objeto."
+        ],
+        "icon": "star-pupil",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Penumbra",
-        icon: "semi-closed-eye",
-        subtitle: "Escuridão leve",
-        description: "Luz fraca, também conhecida como sombra",
-        reference: "PHB, pg. 185.",
-        bullets: [
-            "Cria uma área <b>levemente obscurecida</b>.",
-            "Uma área de penumbra geralmente é um limite entre uma fonte de luz brilhante, como uma tocha, e a escuridão em volta dela.",
-            "A luz suave do nascer e do pôr do sol também contam como penumbra. A lua cheia particularmente brilhante pode banhar a terra com penumbra."
-        ]
+        "title": "Penumbra",
+        "subtitle": "Sombras e contornos",
+        "description": "A penumbra torna o espaço parcialmente obscurecido.",
+        "bullets": [
+            "É comum entre a região bem iluminada de uma fonte de luz e a escuridão ao redor."
+        ],
+        "icon": "semi-closed-eye",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Escuridão total",
-        icon: "worried-eyes",
-        subtitle: "Escuridão densa",
-        description: "Escuridão cria uma área fortemente obscurecida",
-        reference: "PHB, pg. 185.",
-        bullets: [
-            "Cria uma área <b>fortemente obscurecida</b>.",
-            "Personagens enfrentam escuridão ao ar livre à noite (mesmo na maioria das noites com luar), dentro dos limites de uma masmorra ou de uma sala subterrânea, ou em uma ára de escuridão mágica."
-        ]
+        "title": "Escuridão",
+        "subtitle": "Área totalmente obscurecida",
+        "description": "Onde não há iluminação suficiente, o espaço fica totalmente obscurecido.",
+        "bullets": [
+            "Um sentido especial pode permitir que uma criatura enxergue ali, dentro dos limites desse sentido."
+        ],
+        "icon": "worried-eyes",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     }
-]
+];
 
 data_environment_vision = [
     {
-        title: "Percepção às cegas",
-        icon: "one-eyed",
-        subtitle: "Perceber sem visão",
-        description: "Perceber o seu entorno sem depender da luz, dentro de um raio específico",
-        reference: "PHB, pg. 185.",
-        bullets: [
-            "Criaturas sem olhos, como limos, e criaturas com ecolocalização ou sentidos elevados, como morcegos e dragões verdadeiros, possuem esse sentido."
-        ]
+        "title": "Visão às Cegas",
+        "subtitle": "Enxergue sem visão física",
+        "description": "Dentro do alcance desse sentido, você enxerga o que não estiver atrás de cobertura total, mesmo na escuridão ou sob a condição Cego.",
+        "bullets": [
+            "Também enxerga criaturas Invisíveis nesse alcance."
+        ],
+        "icon": "one-eyed",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Visão no escuro",
-        icon: "semi-closed-eye",
-        subtitle: "Visão limitada no escuro",
-        description: "Uma criatura com Visão no escuro pode enxergar melhor no escuro ou em condições de pouca luz, dentro de um raio específico",
-        reference: "PHB, pg. 187.",
-        bullets: [
-            "Dentro de um alcance específico, uma criatura com Visão no escuro pode <b>enxergar na penumbra como se fosse luz plena e na escuridão como se fosse penumbra</b>. Assim, áreas de escuridão são apenas levemente obscurecidas, no que diz respeito a aquela criatura.",
-            "No entanto, a criatura não pode discernir cor na escuridão, somente tons de cinza.",
-            "Muitas criaturas nos mundos de D&D, especialmente aquelas que vivem no subsolo, possuem visão no escuro."
-        ]
+        "title": "Visão no Escuro",
+        "subtitle": "Veja melhor com pouca luz",
+        "description": "Dentro do alcance indicado, você vê na penumbra como se fosse luz plena e na escuridão como se fosse penumbra.",
+        "bullets": [
+            "Na escuridão, distingue apenas tons de cinza."
+        ],
+        "icon": "semi-closed-eye",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Visão verdadeira",
-        icon: "eye-shield",
-        subtitle: "Enxergar na escuridão",
-        description: "Uma criatura com visão verdadeira pode ver tudo em sua forma real, independente do ambiente",
-        reference: "PHB, pg. 187.",
-        bullets: [
-            "Uma criatura com visão verdadeira pode, dentro de um alcance específico, enxergar na escuridão total normal e mágica, ver criaturas e objetos invisíveis, detectar automaticamente ilusões visuais e ter sucesso em testes de resistência contra elas, também pode perceber a forma original de um metamorfo ou de uma criatura que é transformada por magia.",
-            "Além disso, a criatura pode ver no Plano Etéreo."
-        ]
+        "title": "Visão Verdadeira",
+        "subtitle": "Perceba além de ilusões",
+        "description": "Dentro do alcance indicado, você enxerga na escuridão normal e mágica e vê criaturas e objetos Invisíveis.",
+        "bullets": [
+            "Ilusões visuais parecem transparentes e você tem sucesso automático nas salvaguardas contra elas.",
+            "Você percebe a forma verdadeira de criaturas e objetos transformados por magia e enxerga no Plano Etéreo."
+        ],
+        "icon": "eye-shield",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
+    },
+    {
+        "title": "Sentido Sísmico",
+        "subtitle": "Localize movimentos por vibração",
+        "description": "Dentro do alcance desse sentido, você localiza criaturas e objetos em movimento em contato com a mesma superfície ou líquido que você.",
+        "bullets": [
+            "O sentido não conta como visão e não detecta alvos no ar."
+        ],
+        "icon": "one-eyed",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     }
-]
+];
 
 data_environment_cover = [
     {
-        title: "Meia cobertura",
-        icon: "broken-shield",
-        subtitle: "Mureta, mobília grande, criaturas",
-        description: "Um alvo tem meia-cobertura quando um obstáculo bloqueia pelo menos metade de seu corpo",
-        reference: "PHB, pg. 198.",
-        bullets: [
-            "O obstáculo pode ser uma mureta, uma parte de uma mobília grande, um tronco de árvore estreito ou uma criatura, seja ela inimiga ou amigável.",
-            "Um alvo com meia-cobertura tem <b>+2 de bônus na CA e nos testes de resistência de Destreza</b>.",
-            "Se o alvo está atrás de múltiplas fontes de cobertura, apenas aquela de maior grau se aplica, os graus de cobertura não se somam."
-        ]
+        "title": "Meia cobertura",
+        "subtitle": "Mureta, mobília grande, criaturas",
+        "description": "Se um obstáculo protege pelo menos metade do corpo do alvo, ele recebe esse bônus contra ameaças do outro lado.",
+        "bullets": [
+            "Outra criatura também pode fornecer cobertura.",
+            "Se várias coberturas se aplicarem, use apenas o maior grau."
+        ],
+        "icon": "broken-shield",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Três-quartos de cobertura",
-        icon: "cracked-shield",
-        subtitle: "Grade levadiça, seteira",
-        description: "Um alvo tem cobertura superior quando, pelo menos, três quartos do seu corpo é coberto por um obstáculo",
-        reference: "PHB, pg. 198.",
-        bullets: [
-            "O obstáculo pode ser uma grade levadiça, uma seteira ou um tronco de árvore mais robusto.",
-            "Um alvo com três-quartos de cobertura tem <b>+5 de bônus na CA e nos testes de resistência de Destreza</b>.",
-            "Se o alvo está atrás de múltiplas fontes de cobertura, apenas aquela de maior grau se aplica, os graus de cobertura não se somam."
-        ]
+        "title": "Três-quartos de cobertura",
+        "subtitle": "Grade levadiça, seteira",
+        "description": "Um alvo protegido em pelo menos três quartos por um obstáculo, como uma seteira, recebe esse bônus contra ameaças do outro lado.",
+        "bullets": [
+            "Use apenas a melhor cobertura disponível."
+        ],
+        "icon": "cracked-shield",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Cobertura total",
-        icon: "shield",
-        subtitle: "Completamente escondido",
-        description: "Um alvo tem cobertura total quando está completamente escondido por um obstáculo",
-        reference: "PHB, pg. 198.",
-        bullets: [
-            "Um alvo com cobertura total <b>não pode ser alvo direto</b> de um ataque ou de uma magia. No entanto, algumas magias podem atingi-lo ao incluí-lo na área de seu efeito.",
-            "Se o alvo está atrás de múltiplas fontes de cobertura, apenas aquela de maior grau se aplica, os graus de cobertura não se somam."
-        ]
+        "title": "Cobertura total",
+        "subtitle": "Completamente escondido",
+        "description": "Um obstáculo que cobre o alvo por inteiro impede que ele seja escolhido diretamente para ataques ou magias através do obstáculo.",
+        "bullets": [
+            "Para efeitos em área, considere o ponto de origem e o caminho do efeito."
+        ],
+        "icon": "shield",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     }
-]
+];
 
 data_environment_other = [
     {
-        title: "Queda",
-        icon: "falling",
-        subtitle: "Queda de uma grande altura",
-        description: "Uma queda de uma grande altura que pode causar danos de concussão",
-        reference: "PHB, pg. 185.",
-        bullets: [
-            "Uma criatura sofre 1d6 de dano de concussão para cada 3m de queda.",
-            "O dano máximo de uma queda é de até 20d6 (equivalente a 60 metros).",
-            "Após a queda, a criatura ficará caida no chão, a menos que ela evite sofrer o dano da queda.",
-            "O jogador pode tentar realizar um teste de Força (Atletismo) ou Destreza (Acrobacia) para evitar uma queda (segurando-se em algo ou mantendo-se equilibrado), realizar um salto ou acrobacia de forma bem-sucedida ou permanecer de pé em uma situação complicada."
-        ]
+        "title": "Queda",
+        "subtitle": "1d6 de dano a cada 3 m",
+        "description": "Ao fim de uma queda, sofra 1d6 de dano contundente a cada 3 m, até 20d6.",
+        "bullets": [
+            "Você fica Caído ao atingir a superfície, a menos que evite o dano da queda.",
+            "Ao cair em água ou outro líquido, pode usar uma reação para tentar entrar de cabeça ou com os pés primeiro.",
+            "Com sucesso em Força (Atletismo) ou Destreza (Acrobacia) CD 15, reduza o dano pela metade."
+        ],
+        "icon": "falling",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Asfixia",
-        icon: "drowning",
-        subtitle: "Não conseguir respirar",
-        description: "Capacidade de uma criatura ficar sem respirar durante um período",
-        reference: "PHB, pg. 185.",
-        bullets: [
-            "Uma criatura pode segurar sua respiração por um número de minutos igual a 1 + seu modificador de Constituição (mínimo de 30 segundos).",
-            "Quando uma criatura ficar sem respirar, ela pode sobreviver por um número de rodadas igual ao seu modificador de Constituição (mínimo 1 rodada).",
-            "No início do seu próximo turno, ela cai a 0 pontos de vida e está morrendo.",
-            "Se você não puder respirar ou estiver sufocando, você não pode recuperar pontos de vida ou se estabilizar até poder respirar novamente."
-        ]
+        "title": "Asfixia",
+        "subtitle": "Sem ar, acumule Exaustão",
+        "description": "Você pode prender a respiração por 1 + seu modificador de Constituição em minutos, com mínimo de 30 segundos.",
+        "bullets": [
+            "Quando fica sem ar ou está sufocando, ganha um nível de Exaustão ao final de cada um dos seus turnos.",
+            "Assim que voltar a respirar, remova todos os níveis de Exaustão causados por essa asfixia."
+        ],
+        "icon": "drowning",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
+    },
+    {
+        "title": "Combustão",
+        "subtitle": "1d4 de dano ígneo por turno",
+        "description": "Em chamas, uma criatura ou objeto sofre 1d4 de dano ígneo no início de cada um de seus turnos.",
+        "bullets": [
+            "Você pode usar uma ação para ficar Caído e rolar no chão para se apagar.",
+            "Abafar ou submergir o fogo também o extingue."
+        ],
+        "icon": "wildfires",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
+    },
+    {
+        "title": "Desidratação",
+        "subtitle": "Água insuficiente causa Exaustão",
+        "description": "Se você beber menos água do que sua necessidade diária, que depende do tamanho, ganha um nível de Exaustão no fim do dia.",
+        "bullets": [
+            "Para poder remover a Exaustão dessa causa, primeiro beba toda a quantidade de água de que precisa em um dia."
+        ],
+        "icon": "waterskin",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
+    },
+    {
+        "title": "Desnutrição",
+        "subtitle": "Pouca comida pode causar Exaustão",
+        "description": "Se comer menos da metade da quantidade diária necessária, faça uma salvaguarda de Constituição CD 10 no fim do dia.",
+        "bullets": [
+            "Em uma falha, ganhe um nível de Exaustão.",
+            "Depois de cinco dias sem comer, ganhe um nível automaticamente.",
+            "A cada dia adicional sem comer, ganhe outro.",
+            "Para poder remover a Exaustão dessa causa, primeiro coma a quantidade necessária para um dia."
+        ],
+        "icon": "stomach",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     }
-]
+];

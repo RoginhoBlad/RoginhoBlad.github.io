@@ -1,126 +1,130 @@
 data_movement = [
     {
-        title: "Mover-se",
-        icon: "run",
-        subtitle: "Custo: 1m por 1m",
-        description: "Custo de movimento: 1m por 1m percorridos",
-        reference: "PHB, pg. 192-193.",
-        bullets: [
-            "Se você tem mais de um tipo de movimento, como movimento de caminhada ou movimento de vôo, você pode alternar entre seus movimentos durante seu turno. Toda vez que você trocar, subtraia a distância que você já se moveu do novo movimento.",
-            "Você pode mover-se através do espaço ocupado por uma criatura não hostil.",
-            "Você pode mover-se através do espaço ocupado por uma criatura hostil somente se a criatura for, ao menos, duas categorias de tamanho maior ou menor do que você.",
-            "O espaço de outra criatura é <i>Terreno difícil</i> para você.",
-            "Seja uma criatura amiga ou inimiga, você não pode voluntariamente terminar seu deslocamento no espaço dela."
-        ]
+        "title": "Mover-se",
+        "subtitle": "Divida seu movimento pelo turno",
+        "description": "No seu turno, gaste movimento para percorrer até seu Deslocamento.",
+        "bullets": [
+            "Você pode dividir o percurso antes e depois das ações e, com vários ataques da ação Atacar, entre esses ataques.",
+            "Ao trocar de tipo de deslocamento, desconte do novo limite a distância já percorrida nesse turno.",
+            "Você não pode terminar voluntariamente seu movimento no espaço de outra criatura."
+        ],
+        "icon": "run",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Escalar",
-        icon: "crags",
-        subtitle: "Custo: 3m por 1,5m",
-        description: "Custo de movimento: 3m por 1,5m escalados",
-        reference: "PHB, pg. 184.",
-        bullets: [
-            "Pode envolver um teste de Força (Atletismo) se a escalada for difícil."
-        ]
+        "title": "Escalar",
+        "subtitle": "Cada metro normalmente custa 2 m",
+        "description": "Sem usar um Deslocamento de Escalada, escalar custa 1 m adicional por metro, ou 2 m adicionais em terreno difícil.",
+        "bullets": [
+            "O Mestre pode pedir Força (Atletismo) CD 15 em uma superfície escorregadia ou com poucos apoios."
+        ],
+        "icon": "crags",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Nadar",
-        icon: "at-sea",
-        subtitle: "Custo: 3m por 1,5m",
-        description: "Custo de movimento: 3m por 1,5m nadados",
-        reference: "PHB, pg. 184.",
-        bullets: [
-            "Pode envolver um teste de Força (Atletismo) se a natação for difícil."
-        ]
+        "title": "Nadar",
+        "subtitle": "Cada metro normalmente custa 2 m",
+        "description": "Sem usar um Deslocamento de Natação, nadar custa 1 m adicional por metro, ou 2 m adicionais em terreno difícil.",
+        "bullets": [
+            "Em águas turbulentas, o Mestre pode pedir Força (Atletismo) CD 15."
+        ],
+        "icon": "at-sea",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Estar caído",
-        icon: "falling",
-        subtitle: "Custo: 0m",
-        description: "Custo de movimento: 0m (sem custo)",
-        reference: "PHB, pgs. 192-193, 291.",
-        bullets: [
-            "Você pode jogar-se ao chão sem usar qualquer deslocamento seu.",
-            "Para se mover enquanto estiver deitado, você precisa rastejar ou usar uma magia de teletransporte.",
-            "Estar caído adiciona a condição <i>Caído</i> (ataques corpo-a-corpo contra você possuem vantagem, ataques à distância contra você possuem desvantagem, seus próprios ataques possuem desvantagem)."
-        ]
+        "title": "Deitar-se",
+        "subtitle": "Assuma a condição Caído",
+        "description": "No seu turno, você pode se deixar cair sem gastar movimento, desde que seu Deslocamento não seja 0.",
+        "bullets": [
+            "Enquanto estiver Caído, pode rastejar ou gastar movimento para se levantar."
+        ],
+        "icon": "falling",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Rastejar",
-        icon: "crawl",
-        subtitle: "Custo: 3m por 1,5m",
-        description: "Custo de movimento: 3m por 1,5m rastejados",
-        reference: "PHB, pg. 184.",
-        bullets: [
-            "O movimento <i>Rastejar</i> só é possível sob a condição <i>Caído</i>."
-        ]
+        "title": "Rastejar",
+        "subtitle": "Cada metro normalmente custa 2 m",
+        "description": "Para cada metro percorrido rastejando, gaste um metro adicional de movimento.",
+        "bullets": [
+            "Em terreno difícil, percorrer 1 m rastejando custa 3 m."
+        ],
+        "icon": "crawl",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Levantar-se",
-        icon: "strong",
-        subtitle: "Custo: metade do movimento",
-        description: "Custo de movimento: metade de sua velocidade",
-        reference: "PHB, pg. 192-193.",
-        bullets: [
-            "Você não pode se levantar se não possuir deslocamento suficiente sobrando ou se seu deslocamento for 0."
-        ]
+        "title": "Levantar-se",
+        "subtitle": "Gaste metade do Deslocamento",
+        "description": "Para encerrar a condição Caído, gaste movimento igual à metade do seu Deslocamento, arredondada para baixo.",
+        "bullets": [
+            "Você precisa ter movimento suficiente disponível e seu Deslocamento deve ser maior que 0."
+        ],
+        "icon": "strong",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Salto em altura",
-        icon: "wingfoot",
-        subtitle: "Custo: 1m por 1m",
-        description: "Custo de movimento: 1m por 1m pulados",
-        reference: "PHB, pg. 184.",
-        bullets: [
-            "Você salta no ar uma quantidade de metros igual a <b>0,3 x (3 + seu modificador de Força)</b> se percorrer uma distância de, no mínimo, 3 metros antes do salto.",
-            "Quando você realiza um salto em altura sem tomar distância, você pode saltar apenas metade dessa altura.",
-            "Em algumas circunstâncias, o Mestre pode pedir um teste de Força (Atletismo) para verificar se você pode saltar mais alto do que o normal.",
-            "Você pode estender os braços metade da sua altura durante o salto. Assim, você pode alcançar uma distância igual à altura do salto, mais 1½ vezes a sua altura."
-        ]
+        "title": "Salto em altura",
+        "subtitle": "Use seu modificador de Força",
+        "description": "Após percorrer pelo menos 3 m a pé imediatamente antes do salto, você sobe até 1 m + 30 cm por ponto do modificador de Força, com mínimo de 0.",
+        "bullets": [
+            "Sem a corrida, salta metade da altura.",
+            "Cada metro saltado consome movimento.",
+            "Para alcançar algo acima de você, some à altura do salto uma vez e meia a sua altura."
+        ],
+        "icon": "wingfoot",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Salto em distância",
-        icon: "wingfoot",
-        subtitle: "Custo: 1m por 1m",
-        description: "Custo de movimento: 1m por 1m pulados",
-        reference: "PHB, pg. 184.",
-        bullets: [
-            "Você cobre uma distância igual ao seu <b>valor de Força</b> multiplicado por 0,3 metros, se você percorrer, no mínimo, 3 metros antes do salto.",
-            "Quando realiza um salto em distância sem percorrer 3 metros antes de saltar, você pode saltar apenas metade dessa distância.",
-            "Pode envolver um teste de Força (Atletismo) CD 10 para superar um obstáculo baixo (não mais alto do que 1/4 da distância percorrida no salto), como uma cerca ou muro baixo. Caso contrário, você vai colidir contra o obstáculo.",
-            "Pode envolver um teste de Destreza (Acrobacia) CD 10 para aterrissar de pé. Caso contrário, você cairá no chão."
-        ]
+        "title": "Salto em distância",
+        "subtitle": "Use seu valor de Força",
+        "description": "Após percorrer pelo menos 3 m a pé imediatamente antes do salto, você salta até 30 cm por ponto no valor de Força.",
+        "bullets": [
+            "Sem a corrida, salta metade dessa distância.",
+            "Cada metro saltado consome movimento.",
+            "Ao pousar em terreno difícil, faça um teste de Destreza (Acrobacia) CD 10 ou fique Caído.",
+            "O Mestre pode pedir Força (Atletismo) CD 10 para transpor um obstáculo baixo durante o salto."
+        ],
+        "icon": "wingfoot",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Improvisar",
-        icon: "juggler",
-        subtitle: "Qualquer ação fora dessa lista",
-        description: "Realizar qualquer movimento ou acrobacia que você imaginar",
-        bullets: [
-            "Quando você descreve um movimento que não é detalhado em qualquer uma das regras, o Mestre diz se ela é possível e que tipo de jogada você precisa realizar, se houver, para determinar seu sucesso ou fracasso."
-        ]
+        "title": "Improvisar movimento",
+        "subtitle": "Descreva sua manobra",
+        "description": "Para atravessar um obstáculo de um jeito incomum, diga como pretende fazê-lo.",
+        "bullets": [
+            "O Mestre considera a superfície, a distância e os riscos para decidir se precisa de um teste."
+        ],
+        "icon": "juggler",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Terreno difícil",
-        icon: "stone-pile",
-        subtitle: "Modificador: +1,5m a cada 1,5m",
-        reference: "PHB, pg. 192.",
-        description: "Mover-se em um terreno difícil custa 1,5m adicional a cada 1,5m de movimento",
-        bullets: [
-            "Mobílias baixas, escombros, vegetação rasteira, escadas íngremes, neve e pântanos rasos são exemplos de terreno difícil.",
-            "Essa regra é válida mesmo se houver múltiplos obstáculos em um espaço contado como terreno difícil.",
-            "Um espaço ocupado por outra criatura, seja hostil ou não, também conta como terreno difícil."
-        ]
+        "title": "Terreno difícil",
+        "subtitle": "Cada metro custa 2 m",
+        "description": "Cada metro percorrido custa 1 m adicional.",
+        "bullets": [
+            "Entulho, vegetação densa ou gelo podem tornar o terreno difícil.",
+            "Várias causas no mesmo espaço não somam novos custos de terreno difícil."
+        ],
+        "icon": "stone-pile",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Mover criatura agarrada",
-        icon: "grab",
-        subtitle: "Modificador: metade da velocidade",
-        description: "Arrastar ou carregar a criatura agarrada com você",
-        reference: "PHB, pg. 197.",
-        bullets: [
-            "Quando você se move, você pode arrastar ou carregar a criatura vítima de um agarrão, mas seu deslocamento cai pela metade, a menos que a criatura seja duas ou mais categorias de tamanho menor que a sua.",
-            "Veja a ação <i>Agarrão</i> para como agarrar uma criatura."
-        ]
+        "title": "Mover criatura agarrada",
+        "subtitle": "Arraste ou carregue o alvo",
+        "description": "Ao se mover com uma criatura que você agarrou, cada metro percorrido custa 1 m adicional.",
+        "bullets": [
+            "Ignore esse custo se o alvo for Minúsculo ou pelo menos duas categorias de tamanho menor que você."
+        ],
+        "icon": "grab",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
+    },
+    {
+        "title": "Voar",
+        "subtitle": "Use seu Deslocamento de Voo",
+        "description": "Em voo, você cai se ficar Caído ou Incapacitado, ou se seu Deslocamento de Voo chegar a 0.",
+        "bullets": [
+            "Se puder pairar, pode permanecer no ar nessas circunstâncias."
+        ],
+        "icon": "winged-arrow",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     }
-]
+];

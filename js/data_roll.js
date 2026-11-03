@@ -1,107 +1,113 @@
-model = [
-    {
-        title: "",
-        icon: "",
-        subtitle: "",
-        description: "",
-        reference: "PHB, pg. 185.",
-        bullets: [
-            ""
-        ]
-    }
-]
-
 data_roll_types = [
     {
-        title: "Teste de habilidade",
-        icon: "stairs-goal",
-        subtitle: "Superar algum desafio",
-        description: "Um teste de habilidade testa um talento inato do personagem ou monstro e seu treinamento em um esforço para superar um desafio",
-        reference: "PHB, pg. 176.",
-        bullets: [
-            "Para cada teste de habilidade, o Mestre decide qual das seis habilidades é relevante para a tarefa e sua dificuldade, representada por uma Classe de Dificuldade (CD).",
-            "Para fazer um teste de habilidade, jogue um d20 e adicione o modificador da habilidade relevante. Aplique os bônus e penalidades e compare o resultado total à CD.",
-            "Se o total for igual ou superior a CD, o teste de habilidade foi um sucesso e a criatura passou no desafio em questão.",
-            "Caso contrário, será um fracasso, o que significa que o personagem ou monstro não fez nenhum progresso em direção ao objetivo, ou até progrediu, mas sendo esse progresso combinado com um revés determinado pelo Mestre. "
-        ]
+        "title": "Teste de atributo",
+        "subtitle": "Resolva uma tentativa incerta",
+        "description": "Quando o Mestre pedir um teste, role 1d20 e some o modificador do atributo indicado.",
+        "bullets": [
+            "Se uma proficiência relevante se aplicar, some o bônus de proficiência.",
+            "Um total igual ou superior à CD é um sucesso."
+        ],
+        "icon": "stairs-goal",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Teste de resistência",
-        icon: "shield-reflect",
-        subtitle: "Resistir a alguma ameaça",
-        description: "Um teste de resistência representa uma tentativa de resistir a uma magia, uma armadilha, um veneno, uma doença ou uma ameaça similar. ",
-        reference: "PHB, pg. 181.",
-        bullets: [
-            "Você normalmente não decide fazer um teste de resistência, você é forçado a fazer um, porque seu personagem ou monstro corre risco de sofrer algum mal.",
-            "Para fazer um teste de resistência, jogue um d20 e adicione o modificador de habilidade apropriado.",
-            "Um teste de resistência pode ser modificado por um bônus ou penalidade situacional e pode ser afetado por vantagem ou desvantagem, conforme determinado pelo Mestre.",
-            "Cada classe concede proficiência em pelo menos dois testes de resistência. A proficiência em teste de resistência permite que você adicione seu bônus de proficiência nos testes de resistência feitos usando uma habilidade particular.",
-            "A Classe de Dificuldade de um teste de resistência é determinada pelo efeito que a provocou.",
-            "O resultado de um sucesso ou fracasso em um teste de resistência também é detalhado no efeito que o provocou. Geralmente, um teste bem sucedido significa que a criatura não sofreu nenhum dano ou sofreu um dano reduzido, proveniente do efeito."
-        ]
+        "title": "Salvaguarda",
+        "subtitle": "Resista a uma ameaça",
+        "description": "O efeito indica o atributo, a CD e as consequências.",
+        "bullets": [
+            "Role 1d20, some o modificador do atributo e, se tiver proficiência nessa salvaguarda, o bônus de proficiência.",
+            "Você pode escolher falhar voluntariamente sem rolar."
+        ],
+        "icon": "shield-reflect",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Jogada de ataque",
-        icon: "sword-brandish",
-        subtitle: "Tentar atacar um inimigo",
-        description: "Quando você realiza um ataque, sua jogada de ataque determina se o ataque acerta ou erra.",
-        reference: "PHB, pg. 196.",
-        bullets: [
-            "Se o total da jogada, somado aos modificadores, igualar ou ultrapassar a Classe de Armadura (CA) do alvo, o ataque acerta.",
-            "Quando um personagem realiza uma jogada de ataque, os dois modificadores mais comuns para a jogada são o modificador de habilidade e o bônus de proficiência do personagem",
-            "O modificador de habilidade usado para um ataque com uma arma corpo-acorpo é a Força, e o modificador usado para um ataque com uma arma à distância é a Destreza. Armas que possuem a propriedade Acuidade ou Arremesso quebram essa regra.",
-            "Algumas magias também requerem uma jogada de ataque. O modificador de habilidade usado por um ataque de magia depende da habilidade para conjurar magias de quem as conjura.",
-            "Você adiciona seu bônus de proficiência nas jogadas de ataque quando está usando uma arma que é proficiente, bem como quando ataque com uma magia.",
-            "Se a jogada de ataque com o d20 resultar em 20, o ataque acerta, independentemente de qualquer modificador ou da CA do alvo. Além disso, o ataque é considerado um acerto crítico.",
-            "Se a jogada de ataque com o d20 resultar em 1, o ataque erra, independentemente de qualquer modificador ou da CA do alvo."
-        ]
+        "title": "Jogada de ataque",
+        "subtitle": "Compare o resultado com a CA",
+        "description": "Role 1d20 e some os modificadores aplicáveis.",
+        "bullets": [
+            "Um total igual ou superior à Classe de Armadura do alvo acerta.",
+            "Use o atributo apropriado à arma, magia ou ataque.",
+            "No dado, um 1 sempre erra e um 20 sempre acerta e é crítico.",
+            "Em um crítico, jogue duas vezes os dados de dano do ataque e acrescente os modificadores uma só vez."
+        ],
+        "icon": "sword-brandish",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
+    },
+    {
+        "title": "Percepção Passiva",
+        "icon": "magnifying-glass",
+        "subtitle": "Perceber sem uma busca ativa",
+        "description": "O Mestre pode usar esse valor para decidir se você percebe algo sem fazer conscientemente um teste de Sabedoria (Percepção).",
+        "bullets": [
+            "Some 10 ao bônus completo de Sabedoria (Percepção) da sua ficha. Com vantagem nesse teste, acrescente 5. Com desvantagem, subtraia 5.",
+            "Exemplo: com Percepção +4, seu valor passivo é 14. Com vantagem, sobe para 19. Com desvantagem, cai para 9.",
+            "Se você procura ativamente uma criatura escondida, a ação Procurar usa um teste de Sabedoria (Percepção) contra a CD estabelecida pelo resultado de Furtividade dela."
+        ],
+        "reference": "Livro do Jogador 2024 · Glossário · Percepção Passiva, Procurar e Esconder"
     }
-]
+];
 
 data_roll_mods = [
     {
-        title: "Vantagem e desvantagem",
-        icon: "sword-tie",
-        subtitle: "Deve-se jogar um dado adicional",
-        description: "Você geralmente adquire vantagem ou desvantagem através do uso de habilidades especiais, ações ou magias",
-        reference: "PHB, pg. 7, 175.",
-        bullets: [
-            "Uma habilidade especial ou magia podem conceder vantagens ou desvantagens em um teste de habilidade, teste de resistência ou jogada de ataque.",
-            "Você deve jogar um segundo d20 quando realizar a jogada.",
-            "Você deve usar o resultado mais alto entre os dois dados se possuir vantagem, e usar o resultado mais baixo, se possuir desvantagem.",
-            "Se múltiplas situações dão a você vantagens ou impõem desvantagens, ainda assim você joga apenas um d20 adicional.",
-            "Se alguma circunstância provocar uma jogada que tenha tanto uma vantagem quanto uma desvantagem, considera-se que você não possua nenhuma delas, e deve jogar apenas um d20.",
-            "Quando você possui vantagem ou desvantagem e alguma coisa no jogo permite refazer uma jogada de um d20, só um dos dados pode ser jogado de novo. Você escolhe qual."
-        ]
+        "title": "Vantagem e desvantagem",
+        "subtitle": "Role dois d20",
+        "description": "Com vantagem, use o maior resultado.",
+        "bullets": [
+            "Com desvantagem, use o menor.",
+            "Fontes do mesmo tipo não acumulam dados.",
+            "Se houver ao menos uma de cada tipo, elas se anulam e você rola um único d20."
+        ],
+        "icon": "sword-tie",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Bônus de proficiência",
-        icon: "master-of-arms",
-        subtitle: "Modifica o teste de habilidade",
-        description: "As proficiências define, muitas das coisas que o personagem pode fazer muito bem, desde o uso de certas armas, até a maneira de contar uma mentira muito convincente.",
-        reference: "PHB, pg. 11-12, 175-176.",
-        bullets: [
-            "Os personagens têm um bônus de proficiência determinado pelo seu nível",
-            "O bônus é usado nas regras de testes de habilidade, testes de resistência e jogadas de ataque.",
-            "A classe determina as proficiências com armas, as proficiências em testes de resistência, e algumas das proficiências em perícias e ferramentas.",
-            "Os antecedentes de um personagem concedem proficiências adicionais em perícias e ferramentas, e algumas raças concedem mais proficiências.",
-            "Seu bônus de proficiência não pode ser adicionado a uma única rolagem de dados ou outro número mais de uma vez.",
-            "Ocasionalmente, o bônus de proficiência pode ser multiplicado ou dividido (duplicado ou reduzido pela metade, por exemplo) antes de ser aplicado.",
-            "Se uma circunstância sugere que o bônus de proficiência se aplica mais de uma vez para a mesma jogada, você ainda deve adicioná-lo apenas uma vez e multiplicar ou dividir o bônus apenas uma vez.",
-            "Se uma habilidade ou efeito permite que você multiplique seu bônus de proficiência ao fazer um teste de habilidade que normalmente não se beneficiaria do bônus de proficiência, você não adiciona o bônus no teste."
-        ]
+        "title": "Bônus de proficiência",
+        "subtitle": "Some seu treinamento à jogada",
+        "description": "Aplique o bônus quando uma regra usar uma proficiência que você possui, como numa perícia, ferramenta, arma ou salvaguarda.",
+        "bullets": [
+            "O bônus não se soma duas vezes à mesma jogada.",
+            "Especialização pode dobrar esse bônus.",
+            "Quando tanto a perícia quanto a ferramenta usadas em um teste forem suas proficiências, você também tem vantagem nesse teste."
+        ],
+        "icon": "master-of-arms",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     },
     {
-        title: "Resistência e vulnerabilidade",
-        icon: "achilles-heel",
-        subtitle: "Modifica a quantidade de dano",
-        description: "Algumas criaturas e objetos são extremamente difíceis ou muito fáceis de machucar com certos tipos de dano.",
-        reference: "PHB, pg. 199.",
-        bullets: [
-            "Se uma criatura ou objeto tem <i>resistência</i> a um tipo de dano, aquele tipo de dano será reduzido pela metade contra ela.",
-            "Se uma criatura ou objeto tem <i>vulnerabilidade</i> a um tipo de dano, aquele tipo de dano será dobrado contra ela.",
-            "Resistência e vulnerabilidade são aplicados depois de todos os modificadores de dano.",
-            "Múltiplas resistências e vulnerabilidades que afetam o mesmo tipo de dano contam apenas como uma. Ou seja, o dano é sempre multiplicado ou dividido por 2, e não por 4 ou outros valores maiores."
-        ]
+        "title": "Resistência e vulnerabilidade",
+        "subtitle": "Reduza ou dobre o dano",
+        "description": "Resistência reduz à metade o dano do tipo indicado, arredondando para baixo.",
+        "bullets": [
+            "Vulnerabilidade dobra o dano desse tipo.",
+            "Após outros ajustes, aplique primeiro resistência e depois vulnerabilidade.",
+            "Múltiplas resistências ao mesmo dano não se acumulam, nem múltiplas vulnerabilidades.",
+            "Imunidade a um tipo de dano impede esse dano."
+        ],
+        "icon": "achilles-heel",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
+    },
+    {
+        "title": "Inspiração Heroica",
+        "subtitle": "Role um dado novamente",
+        "description": "Imediatamente após rolar qualquer dado, você pode gastar sua Inspiração Heroica para rolá-lo novamente.",
+        "bullets": [
+            "Use o novo resultado.",
+            "Só é possível guardar uma Inspiração Heroica por vez."
+        ],
+        "icon": "star-pupil",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
+    },
+    {
+        "title": "Iniciativa",
+        "subtitle": "Determine a ordem dos turnos",
+        "description": "No início do combate, cada participante faz um teste de Destreza.",
+        "bullets": [
+            "Os turnos seguem do maior para o menor resultado.",
+            "Se for pego de surpresa pelo início do combate, você tem desvantagem na Iniciativa.",
+            "Estar Invisível ao rolar concede vantagem.",
+            "Estar Incapacitado ao rolar impõe desvantagem."
+        ],
+        "icon": "sprint",
+        "reference": "Livro do Jogador 2024 · Capítulo 1 e Glossário de Regras"
     }
-]
+];
